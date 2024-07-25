@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function max_min_fn(num){
+    maxnum = [0]; // 4
+    minnum = [0] // 4
+    for(let i=0; i<num.length; i++){
+      if (maxnum < num[i]) maxnum = num[i];
+      if (minnum > num[i]) minnum = num[i];
+    }
+    return [maxnum, minnum];
+    
+  }
+// 최대값, 최소값
+num=[4,3,1,2,5]; // 최대값 :5 , 최소값 : 1
+
+console.log(max_min_fn(num)); // [5 , 1]
+
+function seq_search_fn(data, sd){
+  let index=0; // 실패
+  for(let i=0; i < data.length; i++){
+    if(data[i]==sd){
+      index=i;
+      break; 
+    }
+  }
+  return index;
+}
+
+// 검색(search) : 순차검색
+data=[1,2,3,4,5,6,7,8,9,10]; // 7을 검색 -> index(6), -1(실패)
+// 가운데에 있는 숫자보다  7이 오른쪽에 있는지 왼쪽에 있는지 
+let index = seq_search_fn(data, 7);
+if(index !=-1){
+console.log("success", "index :"+index); // sucess index : 7
+}else{
+  console.log("실패 :" +index); //-1
+}
+  </script>
+
+</head>
+<body>
+ 
+<div class="container mt-3">
+  <h2>JavaScript</h2>
+  <div class="card">
+    <div class="card-header">ex02</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8"> </div>
+            <div class="col-4">결과화면</div>
+        </div>
+    </div> 
+    <div class="card-footer">사물지능기반 기능제어 서비스 개발자 과정</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

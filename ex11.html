@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// 1. 함수(프로그램의 기능 = 동작, 연산) (이런식으로 써주겠다)선언식
+
+function sum(p1, p2){
+      let hap = p1+p2;
+      return hap;
+
+}
+// 함수 호출((function)Call))
+let result = sum(21, 24); // 가인수(가짜인수) , 실인수(실제 인수)
+console.log(result); // 45
+
+//sum(32, 4343);
+// console.log(result);
+
+// 2. 함수 표현식 : 변수에 함수를 할당(?) 해서 사용하는 방법 (함수를 변수에 담다) (함수 포인터)
+
+let mul = function(p1, p2){
+    return p1*p2;
+
+}
+let value = mul(20, 50);
+console.log(value); // 1000 출력(꼭 console.log 필수!!)
+
+  //매개변수로 두개의 수를 받아서
+  // 두수 사이의 총 합을 구하여 리턴하는 함수를 선언(function)
+// 자바스크립트 언어로 바꾸다
+
+function totalHap(du1, du2){
+let sum = 0;
+for(let i = du1; i <= du2; i++){
+  sum += i ; // 값이 전부 누적
+}
+return sum;
+}
+
+let v = totalHap(120, 555); // 앞에 큰수 뒤에 작은 수 
+console.log(v);
+
+</script>
+
+</head>
+<body>
+ 
+<div class="container mt-3">
+  <h2>JavaScript</h2>
+  <div class="card">
+    <div class="card-header">ex02</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8"> </div>
+            <div class="col-4">결과화면</div>
+        </div>
+    </div> 
+    <div class="card-footer">사물지능기반 기능제어 서비스 개발자 과정</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

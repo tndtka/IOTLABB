@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // 1. 내장함수
+  let su1 = parseInt("10");
+  // 2. 사용자 정의 함수!
+  // 1. 메모리 교환
+  function swap(a, b) {
+  console.log("a:", a, "b:", b);
+    // a와 b의 값을 교환(swap)하시오.
+    let tmp;
+    tmp = a;
+    a = b;
+    b = tmp;
+
+
+    console.log("a:", a, "b:", b); // a : 20, b : 10
+  }
+  swap(10, 20);
+  // 2. 누적하기 (1부터 10까지의 수중 짝수의 합을 구하여 리턴하는 함수)
+  let even_hap = 0;
+  function even_fn(a, b){
+  for (let i = a; i <= b; i++){
+    if(i%2==0){
+    even_hap+=i;
+      }//
+  }//
+  return even_hap;
+
+}
+
+console.log(even_fn(1, 10)); // 30
+console.log(even_hap); // 30
+// 3. 카운드 하기 (1씩 누적) : 1~10까지 수 중 짝수의 개수, 홀수의 개수
+
+function makeAray(){
+const list = [4,3,1,2,5];
+return [4,3,2,1,8];
+// return list;
+}
+
+
+const list = makeAray();
+console.log(list);
+
+function even_odd_fn(a, b){
+  let even_count = 0;
+  let odd_count = 0 ;
+  for(let i=a; i<=b; i++){
+    if(i%2==0){
+      even_count+=1;
+    }else{
+      odd_count+=1;
+    }//
+  }//
+  return [even_count, odd_count];
+}
+console.log(even_odd_fn(1,10)); // [5,5]
+
+</script>
+
+
+</head>
+<body>
+ 
+<div class="container mt-3">
+  <h2>JavaScript</h2>
+  <div class="card">
+    <div class="card-header">ex12</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8"> </div>
+            <div class="col-4">결과화면</div>
+        </div>
+    </div> 
+    <div class="card-footer">사물지능기반 기능제어 서비스 개발자 과정</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>

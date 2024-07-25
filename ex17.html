@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+  // Array(배열)    1         2        3
+  let fruits = ["Banana", "Orange", "Apple"];
+  // 1 : toString()
+  console.log(fruits); // [  ]
+  console.log(fruits.toString());
+  console.log(fruits[0].length); // 6 (길이)
+  console.log(fruits[1].length); // 6
+  console.log(fruits[2].length); // 5
+for(let i=0; i< fruits.length;i++){
+  console.log(fruits[i].length);
+}
+// 위에것보다는 훨씬 조금더 간단한(?) 하나씩 쓰는 것 보다! 
+// 아두이노는 이런 of 이런거 없음 C언어로 해야 함
+for(const f of fruits){
+  console.log(f.length);
+}
+
+// 2. : pop() : 꺼내오면서 제거하는 성질 / 마지막 데이터를 반환하는 함수
+let tail = fruits.pop();  // LIFO  (Last in first out)
+console.log(tail);
+console.log(fruits);
+
+// 3. push() : 새로운 요소를 추가할 때 사용
+fruits.push("Kiwi");  // LIFO 
+console.log(fruits);
+
+// 4. Shift() :  첫 번요소를 반환하고 (빼내고) 재거하는 것
+
+console.log(fruits.shift());
+console.log(fruits);
+
+// 5. unshift() : 맨 첫번째 요소를 제거후 추가하고 배열의 길이를 반환
+console.log(fruits.unshift("Lemon")); // 길이를 반환
+console.log(fruits);
+
+// 6. sort() : 정렬 // 가나다 순 처럼 알파벳 순으로 정렬
+console.log(fruits.sort()); 
+
+
+// 숫자는 문자열로 본다! 그래서 숫자는 안된다.
+let arr = [40,5,1,25,100];
+console.log(arr.sort()); // [1,2,3,4,5]
+
+let arr2=[40,100,1,5,25,10];
+// console.log(arr2.sort(function(a,b){return b-a}));  // [5,4,3,2,1]
+console.log(arr.sort(function(a,b){return a-b})); // [1,2,3,4,5]
+
+// 오브젝트 데이터 : map(), filter()
+
+</script>
+
+
+
+
+  </head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+ 
+<div class="container mt-3">
+  <h2>JavaScript</h2>
+  <div class="card">
+    <div class="card-header">ex02</div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-8"> </div>
+            <div class="col-4">결과화면</div>
+        </div>
+    </div> 
+    <div class="card-footer">사물지능기반 기능제어 서비스 개발자 과정</div>
+  </div>
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
